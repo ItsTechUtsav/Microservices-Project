@@ -6,7 +6,7 @@ products = []
 
 @app.get("/")
 def home():
-    return {"message": "Product Service Running"}
+    return {"message": "Product Service Running Successfully"}
 
 @app.post("/add-product")
 def add_product(name: str):
