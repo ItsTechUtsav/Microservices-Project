@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name : user-service
-          image : microservices-user-service:latest
-          imagePullPolicy: Never
+          image : itstechutsav/microservices-user-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort : 8001

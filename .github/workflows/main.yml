@@ -28,3 +28,13 @@ jobs:
 
     - name: Push Product Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/product-service
+
+    - name: Set kubeconfig
+      run: |
+        mkdir -p $HOME/.kube
+        echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
+
+    - name: Deploy to Kubernetes
+      run: |
+        kubectl rollout restart deployment user-service
+        kubectl rollout restart deployment product-service
