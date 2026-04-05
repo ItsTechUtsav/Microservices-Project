@@ -94,11 +94,11 @@ Microservices/
 ### 🔹 1. Build & Push Docker Images
 
 ```bash
-docker build -t <your-dockerhub-username>/user-service ./user-service
-docker push <your-dockerhub-username>/user-service
+docker build -t itstechutsav/user-service ./user-service
+docker push itstechutsav/user-service
 
-docker build -t <your-dockerhub-username>/product-service ./product-service
-docker push <your-dockerhub-username>/product-service
+docker build -t itstechutsav/product-service ./product-service
+docker push itstechutsav/product-service
 ```
 
 ---
@@ -170,5 +170,4 @@ Open the external IP in browser.
 
 ## 👨‍💻 Author
 
-* UTSAV 
-* DevOps Enthusiast 🚀
+* UTSAV SHARMA
